@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.background {
+  background: url('../../img/type_a/information/background.png') center center no-repeat;
+  background-size: cover;
+}
+
+
+
+
+@media (width: 1920px) {
+
+}
