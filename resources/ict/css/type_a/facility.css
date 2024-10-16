@@ -1,15 +1,114 @@
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100vh;
-}
-
-.background {
-  background: url('../../img/type_a/information/background.png') center center no-repeat;
+  background: url('../../img/type_a/facility/background.png') center center no-repeat;
   background-size: cover;
 }
 
+.white {
+  color: #FFFFFF !important;
+}
 
+.content {
+  display: flex;
+  width: calc(100% - 320px);
+  height: 100%;
+  margin-left: 320px;
+  padding: 0 177px 255px 204px;
+}
+
+.map {
+  position: relative;
+  width: 1804px;
+  height: 1270px;
+}
+
+.map img {
+  object-fit: cover;
+}
+
+.map div {
+  font-family: "Pretendard", sans-serif;
+  font-size: 340px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 340px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.selected_floors {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.selected_floors.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.floor {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  gap: 176px;
+}
+
+.floors {
+  font-family: "Pretendard", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ADB5BD;
+}
+
+.selected {
+  color: #FEC962 !important;
+}
+
+.swiper-container {
+  overflow: hidden;
+  width: 1110px;
+  height: 1560px;
+}
+
+
+.swiper-wrapper {
+  display: flex;
+}
+
+
+.swiper-slide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 30px;
+}
+
+
+.slide-item {
+  box-sizing: border-box;
+  width: 540px;
+  height: 500px;
+  padding: 60px;
+  border-radius: 24px;
+  background: rgba(16, 13, 16, 0.50);
+}
+
+.slide-item img {
+  object-fit: cover;
+}
 
 
 @media (width: 1920px) {

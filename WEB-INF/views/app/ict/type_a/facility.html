@@ -5,19 +5,65 @@
 		<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" />
 		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
 		<link href="../../../../../resources/ict/css/reset.css" rel="stylesheet" type="text/css" />
-		<link href="../../../../../resources/ict/css/type_a/information.css" rel="stylesheet" type="text/css" />
+		<link href="../../../../../resources/ict/css/swiper-bundle.min.css" rel="stylesheet" />
+		<link href="../../../../../resources/ict/css/type_a/facility.css" rel="stylesheet" type="text/css" />
 		<link href="../../../../../resources/ict/css/type_a/common.css" rel="stylesheet" type="text/css" />
 		<script src="../../../../../resources/ict/plugin/jquery-3.7.1.min.js" type="text/javascript"></script>
+		<script src="../../../../../resources/ict/plugin/swiper-bundle.min.js" type="text/javascript"></script>
 		<script src="../../../../../resources/ict/js/type_a/common.js" type="text/javascript"></script>
-		<title>이용안내</title>
+		<script src="../../../../../resources/ict/js/type_a/facility.js" type="text/javascript"></script>
+		<title>공지사항</title>
 	</head>
 	<body>
 		<div class="container">
 			<div class="header_wrapper">
-				<div class="header_caption">LIBRARY INFORMATION</div>
-				<div class="header_title">이용안내</div>
+				<div class="header_caption">FACILITY INFORMATION</div>
+				<div class="header_title white">시설안내</div>
 			</div>
-			<div class="background"></div>
+			<div class="content">
+				<div>
+					<div class="map">
+						<img alt="" src="../../../../../resources/ict/img/type_a/facility/map.svg" />
+						<div class="selected_floors show">1F</div>
+					</div>
+					<div class="floor">
+						<div class="floors selected">
+							<div>1F</div>
+							<img alt="" src="../../../../../resources/ict/img/type_a/facility/yellow_divider.svg" />
+						</div>
+						<div class="floors">
+							<div>2F</div>
+							<img alt="" src="../../../../../resources/ict/img/type_a/facility/divider.svg" />
+						</div>
+						<div class="floors">
+							<div>3F</div>
+							<img alt="" src="../../../../../resources/ict/img/type_a/facility/divider.svg" />
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item1.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item2.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item3.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item4.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item5.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item6.png" /></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item1.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item2.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item3.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item4.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item5.png" /></div>
+							<div class="slide-item"><img alt="" src="../../../../../resources/ict/img/type_a/facility/item6.png" /></div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
 			<div class="navigation">
 				<div class="navigation_wrapper">
 					<img alt="" class="navigation_icon" src="../../../../../resources/ict/img/type_a/common/notice.svg" />
@@ -26,16 +72,16 @@
 					<img alt="" class="navigation_divider" src="../../../../../resources/ict/img/type_a/common/divider.svg" />
 				</div>
 				<div class="navigation_wrapper">
-					<img alt="" class="navigation_icon" src="../../../../../resources/ict/img/type_a/common/active_information.svg" />
-					<div class="navigation_menu active">이용안내</div>
-					<div class="navigation_caption active">INFORMATION</div>
-					<img alt="" class="navigation_divider" src="../../../../../resources/ict/img/type_a/common/divider.svg" style="display: block" />
+					<img alt="" class="navigation_icon" src="../../../../../resources/ict/img/type_a/common/information.svg" />
+					<div class="navigation_menu">이용안내</div>
+					<div class="navigation_caption">INFORMATION</div>
+					<img alt="" class="navigation_divider" src="../../../../../resources/ict/img/type_a/common/divider.svg" />
 				</div>
 				<div class="navigation_wrapper">
-					<img alt="" class="navigation_icon" src="../../../../../resources/ict/img/type_a/common/facility.svg" />
-					<div class="navigation_menu">시설안내</div>
-					<div class="navigation_caption">FACILITY</div>
-					<img alt="" class="navigation_divider" src="../../../../../resources/ict/img/type_a/common/divider.svg" />
+					<img alt="" class="navigation_icon" src="../../../../../resources/ict/img/type_a/common/active_facility.svg" />
+					<div class="navigation_menu active">시설안내</div>
+					<div class="navigation_caption active">FACILITY</div>
+					<img alt="" class="navigation_divider" src="../../../../../resources/ict/img/type_a/common/divider.svg" style="display: block" />
 				</div>
 				<div class="navigation_wrapper">
 					<img alt="" class="navigation_icon" src="../../../../../resources/ict/img/type_a/common/new_book.svg" />
