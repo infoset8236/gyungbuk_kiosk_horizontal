@@ -107,6 +107,7 @@
 	-webkit-filter: invert(6%) sepia(6%) saturate(4831%) hue-rotate(176deg) brightness(99%) contrast(86%);
 	filter: invert(6%) sepia(6%) saturate(4831%) hue-rotate(176deg) brightness(99%) contrast(86%);
 }
+
 .nav li a.on span,
 .nav li a:hover span,
 .nav li a:active span {
@@ -172,6 +173,18 @@
 	left: 420px;
 	top: 1956px;
 }
+
+.component_leave a {
+	display: block;
+}
+
+.component_leave a.on img,
+.component_leave a:hover img,
+.component_leave a:active img {
+	-webkit-filter: invert(100%) sepia(95%) saturate(0%) hue-rotate(146deg) brightness(106%) contrast(104%);
+	filter: invert(100%) sepia(95%) saturate(0%) hue-rotate(146deg) brightness(106%) contrast(104%);
+}
+
 .turn_to {
 	width: 45%;
 	height: 100%;

@@ -36,9 +36,6 @@
 	margin: 0 auto;
 	z-index: 99999999999;
 	position: absolute;
-	/* left: 50%; */
-	/* -webkit-transform: translateX(-50%); */
-	/* transform: translateX(-50%); */
 	top: 300px;
 	right: 7%;
 }
@@ -51,10 +48,9 @@
 }
 .faci_wrap .contents {
 	width: 3520px;
-	height: 1380px;
-	position: relative;
+	position: fixed;
 	padding: 500px 180px 0 180px;
-	float: right;
+	right: 0;
 }
 .faci_wrap .map_wrapper {
 	width: 1840px;
@@ -205,7 +201,7 @@
 }
 
 .faci_wrap .swiper-slide {
-	width: 100%; /* 슬라이드가 컨테이너를 꽉 채우도록 설정 */
+	width: 100%; /* ìŠ¬ë¼ì´ë“œê°€ ì»¨í…Œì´ë„ˆë¥¼ ê½‰ ì±„ìš°ë„ë¡ ì„¤ì • */
 	box-sizing: border-box;
 }
 
@@ -218,7 +214,7 @@
 }
 .photo_frame {
 	background: #e5ddd8;
-	border-radius: 19.2px;
+	border-radius: 20px;
 	padding: 40px 32px 40px 32px;
 	display: flex;
 	flex-direction: row;
@@ -308,7 +304,7 @@
 	line-height: normal;
 }
 .small_photo .fa_image {
-	border-radius: 6.4px;
+	border-radius: 7px;
 	flex-shrink: 0;
 	width: 100%;
 	height: 208px;
@@ -471,58 +467,6 @@
 	-ms-flex-pack: start;
 	justify-content: flex-start;
 }
-.modal_sub_img {
-	width: 498px;
-	height: 328px;
-	position: relative;
-	left: calc(50% - -294px);
-	top: 51px;
-	-o-object-fit: cover;
-	object-fit: cover;
-}
-.small_marker {
-	width: 38px;
-	height: 52px;
-	position: relative;
-	left: 70% !important;
-	top: -9% !important;
-}
-.small_arc {
-	width: 38px;
-	height: 52px;
-	position: relative;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	overflow: visible;
-}
-.small_num {
-	background: #ffffff;
-	border-radius: 54px;
-	padding: 15px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	gap: 5px;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	width: 32px;
-	height: 32px;
-	position: absolute;
-	overflow: hidden;
-	top: 6%;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-}
 
 .modal_landscpe {
 	display: flex;
@@ -554,7 +498,7 @@
 	justify-content: center;
 }
 .pop_totaltxt .text_check {
-	padding: 50px 28px 12px 28px;
+	padding: 50px 28px 12px 4px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -666,28 +610,27 @@
 	background: #191f28;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1920px) {
 	.faci_wrap {
-		height: 1920px;
+		height: 1080px;
+	}
+	.faci_wrap .faci_tab {
+		gap: 30px;
+		width: 436px;
+		top: 150px;
 	}
 	.faci_wrap .contents {
-		width: 900px;
-		margin: 0 auto;
+		width: 1760px;
+		/* height: 690px; */
+		padding: 250px 90px 0 90px;
 	}
 	.faci_wrap .map_wrapper {
 		width: 920px;
-		position: relative;
 		height: 600px;
-		top: 0;
-	}
-	.faci_wrap .faci_tab {
-		width: 538px;
-		top: 955px;
-		gap: 50px;
 	}
 	.faci_wrap .faci_tab a {
 		font-size: 40px;
-		width: 145px;
+		width: 127px;
 		height: 68px;
 	}
 	.faci_wrap .faci_tab a.active {
@@ -695,107 +638,91 @@
 		padding: 10px 50px;
 	}
 	.faci_wrap .faci_tab_cont {
-		height: 1480px;
-		margin: -4px auto;
+		height: 690px;
 	}
 	.floor_page {
-		height: 1320px !important;
-		width: 3520px !important;
+		height: 715px !important;
+		width: 1760px !important;
+		gap: 157px;
+		/* overflow: hidden; */
 	}
 	.faci_wrap .tab_content.active {
-		height: 1500px;
+		height: 690px;
 	}
 	.faci_floor {
 		font-size: 170px;
 	}
-	.faci_tit {
-		font-size: 60px;
-	}
 	.faci_img {
-		width: auto;
 		height: 605px;
-		left: calc(50% - 460px);
 	}
 	.faci_wrap h4 {
 		font-size: 30px;
-		background-size: 32px;
-	}
-	.faci_wrap .txt_frame {
-		border-radius: 24px;
-		padding: 30px 40px 30px 40px;
-		gap: 10px;
-		width: 900px;
-		left: calc(50% - 450px);
-		top: 327px;
 	}
 	.faci_wrap .txt_box {
 		font-size: 26px;
 	}
+
+	.floor_slide_01,
+	.floor_slide_02,
+	.floor_slide_03 {
+		width: 500px !important;
+	}
+
 	.small_photo {
-		gap: 24px;
-		width: 1000px;
-		top: 495px;
+		width: 500px !important;
+		gap: 12px;
 	}
 	.photo_frame {
-		border-radius: 12px;
-		padding: 30px 20px 30px 20px;
-		gap: 35px;
-		width: 278px;
+		background: #e5ddd8;
+		border-radius: 10px;
+		padding: 20px 16px;
+		gap: 28px;
+		width: 244px;
+		height: 215px;
 	}
 	.faci_total {
-		gap: 16px;
+		gap: 6px;
 	}
 	.pic_txt_frame {
-		padding: 0px 0px 0px 4px;
-		gap: 6px;
+		padding: 0px 0px 0px 3px;
+		gap: 4px;
 	}
 	.facilty-1 {
 		font-size: 20px;
 	}
-	.facilty-1-span {
-		font-size: 20px;
-	}
+	.facilty-1-span,
 	.facilty-1-span2 {
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.pic_txt {
-		font-size: 20px;
-		font-weight: 600;
+		font-size: 26px;
 	}
-	.fa_image {
+	.small_photo .fa_image {
 		border-radius: 4px;
-		width: 100%;
-		height: 140px;
+		height: 104px;
 	}
 	.pop-info {
 		border-radius: 30px;
-		width: 900px;
-		height: 1239px;
-		left: calc(50% - 450px);
-		bottom: 461px;
+		width: 1560px;
+		height: 816px;
 	}
 	.modal_main {
-		gap: 10px;
-		width: 750px;
-		left: calc(50% - 375px);
+		width: 650px;
 		top: 212px;
 	}
 	.modal_main_img {
 		border-radius: 18px;
-		width: 750px;
-		height: 467.61px;
+		width: 650px;
+		height: 435px;
 	}
 	.line_03 {
-		width: 900px;
-		height: 2px;
-		position: absolute;
-		left: calc(50% - 450px);
-		top: 1139px;
+		width: 1560px;
+		left: 50%;
+		top: 723px;
 	}
 	.modal_a_01 {
 		gap: 10px;
-		left: calc(50% - 70px);
-		top: 1170px;
+		top: 750px;
 	}
 	.ic-print {
 		width: 38px;
@@ -804,7 +731,8 @@
 	.close_mark {
 		left: 9px;
 		top: 9px;
-		width: 62%;
+		width: 22px;
+		height: 22px;
 	}
 	.close {
 		font-size: 30px;
@@ -813,10 +741,7 @@
 		border-radius: 30px 30px 0px 0px;
 		padding: 80px 0px 30px 50px;
 		gap: 10px;
-		width: 900px;
-	}
-	.modal_txt {
-		font-size: 34px;
+		width: 1560px;
 	}
 	.modal_stit_wrap {
 		width: 114px;
@@ -824,70 +749,54 @@
 		left: 55px;
 		top: 52px;
 	}
+	.modal_txt {
+		font-size: 34px;
+	}
 	.modal_stxt {
 		font-size: 22px;
-		top: -5px;
+		top: -7px;
 	}
-	.modal_sub_img {
-		width: 250px;
-		height: 164px;
-		left: calc(50% - -147px);
-		top: 26px;
-	}
-	.small_marker {
-		width: 20px;
-		height: 26px;
-	}
-	.small_arc {
-		width: 20px;
-		height: 26px;
-	}
-	.small_num {
-		border-radius: 27px;
-		padding: 8px;
-		gap: 3px;
-		width: 16px;
-		height: 16px;
-	}
-	.small_num .number_txt {
-		font-size: 7px;
+
+	.modal_landscpe {
+		height: 438px;
+		top: 220px;
+		gap: 40px;
 	}
 	.pop_totaltxt .text_check {
-		padding: 25px 14px 6px 14px;
+		padding: 25px 14px 6px 2px;
 		gap: 10px;
-		width: 806px;
 	}
 	.text_wrap_ex h4 {
-		background: url('../../img/type_b/facility/check.svg') no-repeat 0px 1px;
+		background: url('../../img/type_b/facility/check.svg') no-repeat 5px 4px;
 		font-size: 11px;
 		padding: 3px 0 3px 50px;
 		font-size: 30px;
-		background-size: 4%;
+		background-size: 34px;
 	}
 	.pop_totaltxt {
-		width: 806px;
-		height: 425px;
-		margin: 700px auto 0;
+		width: 730px;
+		height: 437px;
 	}
+
+	.txt_padding {
+		width: 690px;
+	}
+
 	.pop_totaltxt .txt_frame {
 		border-radius: 18px;
-		padding: 30px 40px 30px 40px;
-		width: 810px;
+		padding: 30px 40px;
+		gap: 10px;
 	}
 	.pop_totaltxt .txt_box {
 		font-size: 20px;
 	}
-	.faci_wrap .bx-wrapper .bx-pager {
-		bottom: 0px;
+	.faci_wrap .swiper-horizontal > .swiper-pagination-bullets {
+		width: 500px !important;
+		top: 97%;
 	}
-	.bg_faci_02 {
-		width: 1080px;
-		height: 1000px;
-	}
-
-	.faci_wrap .bx-wrapper .bx-pager.bx-default-pager a {
+	.faci_wrap .swiper-pagination span {
 		width: 12px;
 		height: 12px;
-		margin: 0 10px;
+		margin: 0 5px !important;
 	}
 }
