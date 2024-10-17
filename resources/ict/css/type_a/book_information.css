@@ -1,0 +1,241 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: url('../../img/type_a/book_information/background.png') center center no-repeat;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  width: calc(100% - 320px);
+  height: calc(100vh - 345.33px);
+  margin-left: 320px;
+  padding: 39px 240px 216px 204px;
+  gap: 224px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.book_wrapper {
+  position: relative;
+  width: 1012px;
+  height: 1012px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.book_wrapper img {
+  position: absolute;
+  top: -2px;
+  left: 120px;
+  width: 760px;
+  height: 1100px;
+  border-radius: 24px;
+  box-shadow: 20px 20px 80px 8px rgba(0, 0, 0, 0.20);
+  object-fit: cover;
+}
+
+.badge {
+  font-family: "Pretendard", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 212px;
+  height: 212px;
+  letter-spacing: -1.25px;
+  color: #FFF;
+  border-radius: 50%;
+  background: #113B9E;
+}
+
+.title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 82px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  display: -webkit-box;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1012px;
+  margin-top: 100px;
+  text-align: center;
+  letter-spacing: -2.05px;
+  text-overflow: ellipsis;
+  color: #191F28;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.book_information {
+  display: flex;
+  justify-content: space-between;
+  gap: 66px;
+}
+
+.book_information_text span {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-right: 32px;
+  letter-spacing: -1.2px;
+  color: #4E5968;
+}
+
+.book_information_text {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+  width: 100%;
+  max-width: 724px;
+  white-space: nowrap;
+  letter-spacing: -1.2px;
+  text-overflow: ellipsis;
+  color: #191F28;
+}
+
+.mb {
+  margin-bottom: 17px;
+}
+
+.location {
+  font-family: "Pretendard", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 80px 0;
+  padding: 28px;
+  text-align: center;
+  color: #FFF;
+  border-radius: 10px;
+  background: #6B7684;
+}
+
+.summary {
+  font-family: "Pretendard", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 80px;
+  display: -webkit-box;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1840px;
+  text-align: justify;
+  text-overflow: ellipsis;
+  color: #252525;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.swiper-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  width: 1840px;
+  height: 640px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-item {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-top: 70px;
+}
+
+.book_title {
+  font-family: "Pretendard", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 140%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 224px;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  letter-spacing: -0.7px;
+  text-overflow: ellipsis;
+  color: #191F28;
+}
+
+.writer {
+  font-family: "Pretendard", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  overflow: hidden;
+  width: 100%;
+  max-width: 224px;
+  white-space: nowrap;
+  letter-spacing: -0.65px;
+  text-overflow: ellipsis;
+  color: #4E5968;
+}
+
+.slide-item img {
+  width: 240px;
+  height: 340px;
+  border-radius: 16px;
+  /*box-shadow: 20px 20px 80px 8px rgba(0, 0, 0, 0.20);*/
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  position: absolute !important;
+  top:  600px !important;
+  display: flex !important;
+  justify-content: center;
+  gap: 28px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: #8B95A1;
+}
+
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF;
+}
