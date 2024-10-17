@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>B타입 이용안내</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1" />
+		<link rel="stylesheet" type="text/css" href="../../../../../resources/ict/css/font.css" />
+		<link rel="stylesheet" type="text/css" href="../../../../../resources/ict/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../../../../resources/ict/css/type_b/welcome_message.css" />
+		<link rel="stylesheet" type="text/css " href="../../../../../resources/ict/css/type_b/common.css" />
+		<script type="text/javascript" src="../../../../../resources/ict/plugin/jquery-3.7.1.min.js"></script>
+	</head>
+	<body>
+		<div class="container div_wrap_info">
+			<div class="contents">
+				<div class="time_and_date">
+					<div class="time_txt time" id="time">
+						<div id="hours" style="--clr: #fff">00</div>
+						<div>:</div>
+						<div id="minutes" style="--clr: #fff">00</div>
+					</div>
+					<div class="date_txt" id="date"><span id="months"></span>월 &nbsp;<span id="days"></span>일 &nbsp;<span id="dayofweeks"></span></div>
+				</div>
+				<div class="wrapper">
+					<div class="welcome_message">인포셋 도서관에 오신 것을 환영합니다</div>
+					<div class="caption">Welcome to Infoset Library</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="navbox">
+				<li>
+					<a href="#this" class="nav_notice"
+						><img src="../../../../../resources/ict/img/type_b/common/nav_01.svg" alt="공지사항" /><span class="kor-txt">공지사항</span><span class="eng-txt">NOTICE</span></a
+					>
+				</li>
+				<li>
+					<a href="#this" class="nav_info"
+						><img src="../../../../../resources/ict/img/type_b/common/nav_02.svg" alt="이용안내" /><span class="kor-txt">이용안내</span><span class="eng-txt">information</span></a
+					>
+				</li>
+				<li>
+					<a href="#this" class="nav_faci"
+						><img src="../../../../../resources/ict/img/type_b/common/nav_03.svg" alt="시설안내" /><span class="kor-txt">시설안내</span><span class="eng-txt">FACIRITY</span></a
+					>
+				</li>
+				<li>
+					<a href="#this" class="nav_new"
+						><img src="../../../../../resources/ict/img/type_b/common/nav_04.svg" alt="신착도서" /><span class="kor-txt">신착도서</span><span class="eng-txt">NEW BOOK</span></a
+					>
+				</li>
+				<li>
+					<a href="#this" class="nav_best"
+						><img src="../../../../../resources/ict/img/type_b/common/nav_05.svg" alt="대출베스트" /><span class="kor-txt">대출베스트</span><span class="eng-txt">BEST BOOK</span></a
+					>
+				</li>
+				<li>
+					<a href="#this" class="nav_cour"
+						><img src="../../../../../resources/ict/img/type_b/common/nav_06.svg" alt="강좌안내" /><span class="kor-txt">강좌안내</span><span class="eng-txt">course</span></a
+					>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		$(function () {
+			var now = new Date();
+
+			let y = now.getFullYear();
+			let mo = now.getMonth() + 1;
+			let d = now.getDate();
+			let dow = now.getDay();
+			var week = new Array('일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일');
+			var today = new Date().getDay();
+			var todayLabel = week[today];
+
+			$('#years').text(y);
+			$('#months').text(mo);
+			$('#days').text(d);
+			$('#dayofweeks').text(todayLabel);
+		});
+
+		setInterval(() => {
+			var day = new Date();
+
+			let hours = document.getElementById('hours');
+			let minutes = document.getElementById('minutes');
+			//let seconds = document.getElementById('seconds');
+			//let ampm = document.getElementById('ampm');
+
+			let h = day.getHours();
+			let m = day.getMinutes();
+			//let s = day.getSeconds();
+			//let am = h >= 12 ? "PM" : "AM";
+
+			//convert 24hr clock to 12hr clock
+			if (h > 12) {
+				//h = h - 12;
+			}
+			//add zero before single digital number
+			h = h < 10 ? '0' + h : h;
+			m = m < 10 ? '0' + m : m;
+			//s = (s < 10) ? "0" + s : s;
+
+			hours.innerHTML = h;
+			minutes.innerHTML = m;
+			//seconds.innerHTML = s;
+			//ampm.innerHTML = am;
+		});
+	</script>
+</html>
