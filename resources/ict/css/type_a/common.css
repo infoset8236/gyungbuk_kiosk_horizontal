@@ -123,8 +123,9 @@
 }
 
 .user_img {
-  width: 96px;
-  height: 96px;
+  width: 95px;
+  height: 95px;
+  margin-left: -20px;
 }
 
 .user_name span{
@@ -280,6 +281,7 @@
   .user_img {
     width: 48px;
     height: 48px;
+    margin-left: -13px;
   }
 
   .user_name span {
