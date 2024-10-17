@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	var swiper = new Swiper('.swiper-container', {
-		direction: 'vertical', // 세로 슬라이드 설정
+		direction: 'vertical',
 		loop: true,
 		slidesPerView: 1,
 		pagination: {
@@ -12,14 +12,27 @@ $(document).ready(function () {
 	var initialFloor = '1F';
 	$('.selected_floors').text(initialFloor);
 
+	$('.map img').attr('src', '../../../../../resources/ict/img/type_a/facility/map_1.png');
+
 	setTimeout(() => {
 		$('.selected_floors').addClass('show');
-	}, 10); // 아주 짧은 시간 후에 실행
+	}, 10);
 
 	$('.floors.selected img').attr('src', '../../../../../resources/ict/img/type_a/facility/yellow_divider.svg');
 
 	$('.floors').on('click', function () {
 		var selectedFloor = $(this).children('div').text();
+
+		var mapImageSrc = '';
+		if (selectedFloor === '1F') {
+			mapImageSrc = '../../../../../resources/ict/img/type_a/facility/map_1.png';
+		} else if (selectedFloor === '2F') {
+			mapImageSrc = '../../../../../resources/ict/img/type_a/facility/map_2.svg';
+		} else if (selectedFloor === '3F') {
+			mapImageSrc = '../../../../../resources/ict/img/type_a/facility/map_3.png';
+		}
+
+		$('.map img').attr('src', mapImageSrc);
 
 		$('.selected_floors').removeClass('show');
 		setTimeout(() => {
@@ -31,5 +44,21 @@ $(document).ready(function () {
 
 		$(this).addClass('selected');
 		$(this).find('img').attr('src', '../../../../../resources/ict/img/type_a/facility/yellow_divider.svg');
+	});
+});
+
+$(document).ready(function () {
+	$('.slide-item').click(function () {
+		$('#modal').fadeIn(300);
+	});
+
+	$('.close').click(function () {
+		$('#modal').fadeOut(300);
+	});
+
+	$(window).click(function (event) {
+		if ($(event.target).is('#modal')) {
+			$('#modal').fadeOut(300);
+		}
 	});
 });
