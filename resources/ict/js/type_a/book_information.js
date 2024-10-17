@@ -10,7 +10,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-	$('.slide-item').click(function () {
+	$('.location').click(function () {
 		$('#modal').fadeIn(300);
 	});
 
