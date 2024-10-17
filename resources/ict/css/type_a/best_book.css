@@ -154,7 +154,7 @@
     top: 585px !important; /* 1170px -> 585px */
     display: flex !important;
     justify-content: center;
-    gap: 20px !important; /* 40px -> 20px */
+    gap: 10px !important; /* 40px -> 20px */
   }
 
   .swiper-pagination-bullet {
