@@ -23,7 +23,7 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	gap: 100px;
+	gap: 60px;
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: center;
@@ -31,15 +31,16 @@
 	-ms-flex-pack: start;
 	justify-content: space-between;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	width: 1076px;
+	flex-wrap: nowrap;
+	width: 872px;
 	margin: 0 auto;
 	z-index: 99999999999;
 	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	top: 1910px;
+	/* left: 50%; */
+	/* -webkit-transform: translateX(-50%); */
+	/* transform: translateX(-50%); */
+	top: 300px;
+	right: 7%;
 }
 .faci_wrap .bx-wrapper {
 	background: none;
@@ -52,7 +53,7 @@
 	width: 3520px;
 	height: 1380px;
 	position: relative;
-	padding: 400px 180px 0 180px;
+	padding: 500px 180px 0 180px;
 	float: right;
 }
 .faci_wrap .map_wrapper {
@@ -68,14 +69,14 @@
 	font-size: 80px;
 	font-weight: 600;
 	display: inline-block;
-	width: 290px;
+	width: 254px;
 	position: relative;
 	height: 135px;
 }
 .faci_wrap .faci_tab a.active {
 	background: #191f28;
 	border-radius: 500px;
-	padding: 20px 100px 20px 100px;
+	padding: 20px 100px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -107,7 +108,7 @@
 	margin: 0 auto;
 }
 .floor_page {
-	height: 1380px !important;
+	height: 1430px !important;
 	width: 3520px !important;
 	display: flex;
 	margin: 0 auto;
@@ -199,12 +200,20 @@
 .floor_slide_02,
 .floor_slide_03 {
 	width: 1000px !important;
+	position: relative;
+	overflow: hidden;
+}
+
+.faci_wrap .swiper-slide {
+	width: 100%; /* 슬라이드가 컨테이너를 꽉 채우도록 설정 */
+	box-sizing: border-box;
 }
 
 .small_photo {
 	width: 1000px !important;
-	display: grid;
+	display: grid !important;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 	gap: 24px;
 }
 .photo_frame {
@@ -302,7 +311,7 @@
 	border-radius: 6.4px;
 	flex-shrink: 0;
 	width: 100%;
-	height: 194px;
+	height: 208px;
 	position: relative;
 	object-fit: cover;
 }
@@ -322,50 +331,44 @@
 .pop-info {
 	background: #ffffff;
 	border-radius: 60px;
-	width: 1800px;
-	height: 2478px;
+	width: 3120px;
+	height: 1632px;
 	position: absolute;
-	left: calc(50% - 900px);
-	bottom: 922px;
+	left: 50%;
+	top: 50%;
 	overflow: hidden;
+	transform: translate(-50%, -50%);
 }
 .modal_main {
-	display: -webkit-box;
+	display: block;
 	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	gap: 20px;
-	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
-	width: 1500px;
-	position: absolute;
-	left: calc(50% - 750px);
+	width: 1300px;
 	top: 424px;
 }
 .modal_main_img {
 	border-radius: 36px;
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
-	width: 1500px;
-	height: 935px;
+	width: 1300px;
+	height: 870px;
 	position: relative;
 	-o-object-fit: cover;
 	object-fit: cover;
 }
 .line_03 {
 	background: #e5e8eb;
-	width: 1800px;
+	width: 3120px;
 	height: 2px;
 	position: absolute;
-	left: calc(50% - 900px);
-	top: 2278px;
+	left: 50%;
+	top: 1446px;
+	transform: translateX(-50%);
 }
 .modal_a_01 {
 	display: -webkit-box;
@@ -381,10 +384,12 @@
 	align-items: center;
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
-	justify-content: flex-start;
+	justify-content: center;
 	position: absolute;
-	left: calc(50% - 140px);
-	top: 2338px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 1500px;
+	width: 100%;
 }
 .ic-print {
 	-ms-flex-negative: 0;
@@ -423,21 +428,12 @@
 	background: #e5ddd8;
 	border-radius: 60px 60px 0px 0px;
 	padding: 160px 0px 60px 100px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
 	flex-direction: row;
 	gap: 20px;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: flex-start;
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
 	justify-content: flex-start;
-	width: 1800px;
+	width: 3120px;
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -454,6 +450,7 @@
 .modal_txt {
 	color: #191f28;
 	font-weight: 600;
+	font-size: 68px;
 }
 .modal_stxt {
 	color: #6b7684;
@@ -463,7 +460,7 @@
 	font-weight: 400;
 	position: absolute;
 	left: 0px;
-	top: -5px;
+	top: -15px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -526,6 +523,19 @@
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
+
+.modal_landscpe {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	height: 876px;
+	top: 440px;
+	left: 50%;
+	transform: translateX(-50%);
+	align-items: flex-start;
+	gap: 80px;
+}
+
 .small_num .number_txt {
 	color: #191f28;
 	text-align: center;
@@ -559,7 +569,7 @@
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
-	width: 1612px;
+	/* width: 1612px; */
 	position: relative;
 	display: inline-block;
 }
@@ -581,12 +591,17 @@
 	align-self: stretch;
 }
 .pop_totaltxt {
-	width: 1612px;
+	width: 1460px;
 	display: block;
-	height: 850px;
+	height: 874px;
 	overflow-x: hidden;
-	margin: 1400px auto 0;
+	/* margin: 1400px auto 0; */
 }
+
+.txt_padding {
+	width: 1380px;
+}
+
 .pop_totaltxt .txt_frame {
 	background: #eff1f3;
 	border-radius: 36px;
@@ -605,7 +620,7 @@
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	width: 1620px;
+	/* width: 1620px; */
 	position: relative;
 	left: 50%;
 	display: inline-block;
@@ -627,14 +642,24 @@
 .faci_wrap .bx-wrapper .bx-pager {
 	bottom: 120px;
 }
-
-.faci_wrap .bx-wrapper .bx-pager.bx-default-pager a {
+.faci_wrap .swiper-horizontal > .swiper-pagination-bullets {
+	width: 1000px !important;
+	right: 0;
+	top: 97%;
+}
+.faci_wrap .swiper-pagination span {
 	background: #adb5bd;
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
-	margin: 0 20px;
+	margin: 0 20px !important;
+	opacity: 1;
 }
+
+.faci_wrap span.swiper-pagination-bullet-active {
+	background: #191f28;
+}
+
 .faci_wrap .bx-wrapper .bx-pager.bx-default-pager a.active,
 .faci_wrap .bx-wrapper .bx-pager.bx-default-pager a:focus,
 .faci_wrap .bx-wrapper .bx-pager.bx-default-pager a:hover {
@@ -710,9 +735,6 @@
 		gap: 24px;
 		width: 1000px;
 		top: 495px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
 	}
 	.photo_frame {
 		border-radius: 12px;
