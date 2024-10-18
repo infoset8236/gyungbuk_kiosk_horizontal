@@ -45,7 +45,7 @@
   line-height: normal;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   letter-spacing: -1.4px;
   color: #191F28;
   gap: 27px;
@@ -121,12 +121,20 @@
   border-bottom: 2px solid #E5E8EB;
 }
 
-.time_table tbody td:first-child {
+/*.time_table tbody td:first-child {*/
+/*  border-radius: 0 0 0 20px;*/
+/*}*/
+
+
+/*.time_table tbody td:last-child {*/
+/*  border-radius: 0 0 20px 0;*/
+/*}*/
+
+.time_table tr:last-child td:first-child {
   border-radius: 0 0 0 20px;
 }
 
-
-.time_table tbody td:last-child {
+.time_table tr:last-child td:last-child {
   border-radius: 0 0 20px 0;
 }
 
@@ -220,7 +228,7 @@
     line-height: normal;
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px; /* 80px / 2 */
+    margin-bottom: 30px; /* 80px / 2 */
     letter-spacing: -0.7px; /* -1.4px / 2 */
     color: #191F28;
     gap: 13.5px; /* 27px / 2 */
@@ -256,11 +264,11 @@
   }
 
   .time_table tr th:first-child {
-    border-radius: 20px 0 0 0; /* 비율이므로 유지 */
+    border-radius: 20px 0 0 0;
   }
 
   .time_table tr th:last-child {
-    border-radius: 0 20px 0 0; /* 비율이므로 유지 */
+    border-radius: 0 20px 0 0;
   }
 
   .time_table tbody {
@@ -272,7 +280,7 @@
     font-family: "Pretendard", sans-serif;
     font-size: 22px; /* 44px / 2 */
     font-weight: 500;
-    line-height: normal;
+    line-height: 140%;
     padding: 16px 20px; /* (32px, 40px) / 2 */
     text-align: center;
     letter-spacing: -0.55px; /* -1.1px / 2 */
@@ -293,13 +301,13 @@
     border-bottom: 1px solid #E5E8EB; /* 2px / 2 */
   }
 
-  .time_table tbody td:first-child {
-    border-radius: 0 0 0 10px; /* 20px / 2 */
-  }
+  /*.time_table tbody td:first-child {*/
+  /*  border-radius: 0 0 0 10px;*/
+  /*}*/
 
-  .time_table tbody td:last-child {
-    border-radius: 0 0 10px 0; /* 20px / 2 */
-  }
+  /*.time_table tbody td:last-child {*/
+  /*  border-radius: 0 0 10px 0;*/
+  /*}*/
 
   .text_wrapper {
     font-family: "Pretendard", sans-serif;
