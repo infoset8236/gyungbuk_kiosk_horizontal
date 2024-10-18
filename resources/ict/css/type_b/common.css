@@ -342,14 +342,14 @@ html {
 }
 
 .div_wrap_info {
-	height: 3840px;
+	height:2160px;
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 }
 .div_wrap_info .div_wrap_bg {
-	width: 2160px;
-	height: 3840px;
+	width: 3840px;
+	height: 2160px;
 	position: absolute;
 	left: 0px;
 	top: 0px;
