@@ -43,7 +43,7 @@
 	justify-content: flex-start;
 	position: absolute !important;
 	left: calc(50% - -1515px);
-	top: 140px;
+	top: 180px;
 	height: 2040px;
 	overflow-y: hidden;
 }
@@ -68,8 +68,8 @@
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
 	position: relative;
-	width: 240px !important;
-	height: 450px !important;
+	width: 234px !important;
+	height: 444px !important;
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
@@ -106,7 +106,7 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	gap: 7.83px;
+	gap: 6px;
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
@@ -119,7 +119,7 @@
 	position: relative;
 }
 .book_infotit {
-	padding: 0px 7.83px 0px 7.83px;
+	padding: 0px 8px 0px 8px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -139,6 +139,7 @@
 	flex-shrink: 0;
 	position: relative;
 	overflow: hidden;
+	/* gap: 6px; */
 }
 .book_infotit_in {
 	color: #191f28;
@@ -152,7 +153,7 @@
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
-	width: 234.78px;
+	width: 235px;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -207,7 +208,7 @@
 	height: 1400px;
 	position: absolute !important;
 	left: 484px;
-	top: calc(50% - 695px);
+	top: 360px;
 	overflow: hidden;
 }
 
@@ -621,7 +622,7 @@
 		-ms-flex-pack: start;
 		justify-content: flex-start;
 		left: calc(50% - -757.5px);
-		top: 70px;
+		top: 90px;
 		width: auto;
 		overflow-y: hidden;
 		height: 1010px;
@@ -647,8 +648,8 @@
 		-ms-flex-negative: 0;
 		flex-shrink: 0;
 		position: relative;
-		width: 120px !important;
-		height: 220px !important;
+		width: 117px !important;
+		height: 222px !important;
 		margin-bottom: 30px;
 		margin-right: 0;
 		margin-top: 0;
@@ -658,9 +659,9 @@
 		height: 180px;
 	}
 	.thum_img {
-		width: 117.39px;
-		height: 166.305px;
-		left: calc(50% - 58.695px);
+		width: 118px;
+		height: 165px;
+		left: calc(50% - 58px);
 		top: calc(50% - 90px);
 		border-width: 1px;
 		border-radius: 8px;
@@ -673,7 +674,7 @@
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		gap: 3.915px;
+		gap: 3px;
 		-webkit-box-align: start;
 		-ms-flex-align: start;
 		align-items: flex-start;
@@ -682,11 +683,11 @@
 		justify-content: flex-start;
 		-ms-flex-negative: 0;
 		flex-shrink: 0;
-		width: 117.39px;
+		width: 118px;
 		position: relative;
 	}
 	.book_infotit {
-		padding: 0px 3.915px 0px 3.915px;
+		padding: 0px 4px 0px 4px;
 	}
 	.book_infotit_in {
 		font-size: 14px;
@@ -699,12 +700,20 @@
 		font-size: 12px;
 		width: 117.39px;
 	}
+.contents{
+	position:relative;
+	height:100%;
+}
+
+.booklist_wrap{position:relative;
+	height:100%;}
+	
 	.bookinfo_main {
 		width: 1380px;
 		height: 700px;
 		position: absolute !important;
 		left: 247px;
-		top: calc(50% - 347.5px);
+		top: 180px;
 	}
 	.bookinfo_main .slick-slide {
 		height: 700px;
@@ -723,6 +732,7 @@
 		justify-content: space-between;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
+		border-radius: 30px;
 		-ms-flex-direction: row;
 		flex-direction: row;
 	}
