@@ -12,7 +12,7 @@ $(document).ready(function () {
 	var initialFloor = '1F';
 	$('.selected_floors').text(initialFloor);
 
-	$('.map img').attr('src', '../../../../../resources/ict/img/type_a/facility/map_1.png');
+	$('.map img').attr('src', '../../../../../resources/ict/img/type_a/facility/map_1F.png');
 
 	setTimeout(() => {
 		$('.selected_floors').addClass('show');
@@ -25,11 +25,11 @@ $(document).ready(function () {
 
 		var mapImageSrc = '';
 		if (selectedFloor === '1F') {
-			mapImageSrc = '../../../../../resources/ict/img/type_a/facility/map_1.png';
+			mapImageSrc = '../../../../../resources/ict/img/type_a/facility/map_1F.png';
 		} else if (selectedFloor === '2F') {
-			mapImageSrc = '../../../../../resources/ict/img/type_a/facility/map_2.svg';
+			mapImageSrc = '../../../../../resources/ict/img/type_a/facility/map_2F.svg';
 		} else if (selectedFloor === '3F') {
-			mapImageSrc = '../../../../../resources/ict/img/type_a/facility/map_3.png';
+			mapImageSrc = '../../../../../resources/ict/img/type_a/facility/map_3F.svg';
 		}
 
 		$('.map img').attr('src', mapImageSrc);
