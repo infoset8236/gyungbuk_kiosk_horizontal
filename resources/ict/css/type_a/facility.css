@@ -227,7 +227,7 @@
 }
 
 .modal_wrapper {
-  padding: 140px;
+  padding: 140px 110px 140px 140px;
 }
 
 .modal_scroll {
@@ -554,7 +554,7 @@
   }
 
   .modal_wrapper {
-    padding: 70px; /* 140 / 2 */
+    padding: 70px 55px 70px 70px; /* 140 / 2 */
   }
 
   .modal_scroll {
