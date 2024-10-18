@@ -355,15 +355,6 @@
 }
 
 @media (width: 1920px) {
-  .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background: url('../../img/type_a/book_information/background.png') center center no-repeat;
-    background-size: cover;
-  }
-
   .content {
     display: flex;
     width: calc(100% - 160px);
@@ -371,12 +362,6 @@
     margin-left: 160px;
     padding: 19.5px 120px 108px 102px;
     gap: 100px;
-  }
-
-  .left {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
   }
 
   .book_wrapper {
@@ -487,7 +472,7 @@
     padding: 14px;
     text-align: center;
     color: #FFF;
-    border-radius: 5px;
+    border-radius: 10px;
     background: #6B7684;
   }
 
@@ -508,8 +493,13 @@
     -webkit-line-clamp: 4;
   }
 
-  .swiper-container {
+  .wrapper {
     position: relative;
+  }
+
+  .swiper-container {
+    position: absolute;
+    right: -50px;
     display: flex;
     overflow: hidden;
     justify-content: center;
@@ -518,13 +508,14 @@
 
   .swiper-wrapper {
     display: flex;
-    width: 920px;
+    width: 1020px;
     height: 320px;
   }
 
   .swiper-slide {
     display: flex;
     justify-content: space-between;
+    padding: 0 50px;
   }
 
   .slide-item {
@@ -570,12 +561,13 @@
     width: 120px;
     height: 170px;
     border-radius: 8px;
+    box-shadow: 10px 10px 40px 4px rgba(0, 0, 0, 0.20);
     object-fit: cover;
   }
 
   .swiper-pagination {
     position: absolute !important;
-    top: 300px !important;
+    top:  300px !important;
     display: flex !important;
     justify-content: center;
     gap: 14px !important;
@@ -648,7 +640,7 @@
     display: flex;
     width: 100%;
     padding: 32px;
-    border-top: 1px solid #A2A2A2;
+    border-top: 2px solid #A2A2A2;
   }
 
   .close {
@@ -657,7 +649,7 @@
     font-weight: 500;
     font-style: normal;
     line-height: normal;
-    position: relative; /* 구분선을 위한 상대 위치 */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
