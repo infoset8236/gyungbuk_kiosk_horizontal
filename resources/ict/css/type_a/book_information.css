@@ -13,7 +13,7 @@
   height: calc(100vh - 345.33px);
   margin-left: 320px;
   padding: 39px 240px 216px 204px;
-  gap: 200px;
+  gap: 224px;
 }
 
 .left {
@@ -48,7 +48,7 @@
   font-style: normal;
   line-height: normal;
   position: absolute;
-  right: 0;
+  right: 20px;
   bottom: 50px;
   display: flex;
   align-items: center;
@@ -82,8 +82,7 @@
 
 .book_information {
   display: flex;
-  justify-content: space-between;
-  gap: 66px;
+  gap: 74px;
 }
 
 .book_information_text span {
@@ -92,7 +91,7 @@
   font-weight: 400;
   font-style: normal;
   line-height: normal;
-  margin-right: 32px;
+  margin-right: 48px;
   letter-spacing: -1.2px;
   color: #4E5968;
 }
@@ -105,7 +104,8 @@
   line-height: normal;
   overflow: hidden;
   width: 100%;
-  max-width: 724px;
+  min-width: 892px;
+  max-width: 892px;
   white-space: nowrap;
   letter-spacing: -1.2px;
   text-overflow: ellipsis;
@@ -361,7 +361,7 @@
     height: calc(100vh - 172.665px);
     margin-left: 160px;
     padding: 19.5px 120px 108px 102px;
-    gap: 100px;
+    gap: 112px;
   }
 
   .book_wrapper {
@@ -390,7 +390,7 @@
     font-style: normal;
     line-height: normal;
     position: absolute;
-    right: 0;
+    right: 10px;
     bottom: 25px;
     display: flex;
     align-items: center;
