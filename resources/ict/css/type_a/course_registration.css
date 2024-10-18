@@ -6,6 +6,9 @@
   background: url('../../img/type_a/course_registration/background.png') center center no-repeat;
   background-size: cover;
 }
+.caption_gray {
+  color: #6B7684 !important;
+}
 
 .white {
   color: #FFFFFF !important;
