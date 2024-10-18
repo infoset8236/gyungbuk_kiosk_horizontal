@@ -10,7 +10,7 @@
   width: calc(100% - 320px);
   height: calc(100vh - 345.33px);
   margin-left: 320px;
-  padding-top: 290px;
+  padding-top: 234px;
 }
 
 .swiper-container {
@@ -120,7 +120,7 @@
     width: calc(100% - 160px); /* 320px -> 160px */
     height: calc(100vh - 172.665px); /* 345.33px -> 172.665px */
     margin-left: 160px; /* 320px -> 160px */
-    padding-top: 145px; /* 290px -> 145px */
+    padding-top: 117px; /* 290px -> 145px */
   }
 
   .swiper-container {
